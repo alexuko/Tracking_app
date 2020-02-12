@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/grey_dark">
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Year : Month : Day"
+        android:textAlignment="textEnd"
+        android:textColor="@color/grey_Medium"
+        android:fontFamily="sans-serif-smallcaps"
+        android:gravity="end"
+        android:layout_alignParentTop="true"/>
+
+    <TextView
+        android:id="@+id/app_instructions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:text="@string/instructions"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textColor="@color/grey_Light" />
+
+    <LinearLayout
+    android:id="@+id/control_buttons"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_centerInParent="true">
+    <Button
+        android:id="@+id/start_btn"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@drawable/round_shape"
+        android:backgroundTint="@color/start_btn_color"
+        android:textColor="@color/text_btn_color"
+        android:textStyle="normal"
+        android:fontFamily="monospace"
+        android:textSize="20dp"
+        android:text="start"/>
+    <Button
+        android:id="@+id/stop_btn"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@drawable/round_shape"
+        android:backgroundTint="@color/stop_btn_color"
+        android:textColor="@color/text_btn_color"
+        android:textStyle="normal"
+        android:fontFamily="monospace"
+        android:textSize="20dp"
+        android:visibility="gone"
+        android:text="stop"/>
+</LinearLayout>
+
+    <Chronometer
+        android:id="@+id/chronometer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/control_buttons"
+        android:layout_marginTop="50dp"
+        android:text="000.0000"
+        android:textStyle="italic"
+        android:fontFamily="sans-serif-light"
+        android:textSize="25dp"
+        android:textColor="@color/results_number_color"
+        android:textAlignment="center"/>
+
+</RelativeLayout>

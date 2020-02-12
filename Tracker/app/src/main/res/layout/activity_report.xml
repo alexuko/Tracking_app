@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+
+    android:background="@color/grey_dark">
+
+    <TextView
+        android:id="@+id/banner_distance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Distance"
+        android:fontFamily="serif-monospace"
+        android:textSize="20dp"
+        android:textColor="@color/results_label_color"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="5dp"
+        android:textAlignment="center" />
+    <TextView
+        android:id="@+id/distance_color_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/distance_line_color"
+        android:layout_below="@id/banner_distance"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"/>
+
+    <LinearLayout
+    android:id="@+id/distance_values"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/banner_distance">
+
+    <TextView
+        android:id="@+id/label_distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:fontFamily="serif-monospace"
+        android:text="Total:"
+        android:textAllCaps="true"
+        android:textColor="@color/results_label_color"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/total_distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:text="000.0000"
+        android:textStyle="italic"
+        android:fontFamily="sans-serif-light"
+        android:textSize="17dp"
+        android:textColor="@color/results_number_color"
+        android:gravity="start" />
+
+</LinearLayout>
+        <!--        Altitude        -->
+        <TextView
+            android:id="@+id/banner_altitude"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/distance_values"
+            android:text="Altitude"
+            android:fontFamily="serif-monospace"
+            android:textSize="20dp"
+            android:textColor="@color/results_label_color"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="5dp"
+            android:textAlignment="center" />
+    <TextView
+        android:id="@+id/altitude_color_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/avg_Alt_line_color"
+        android:layout_below="@id/banner_altitude"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"/>
+
+        <LinearLayout
+            android:id="@+id/altitude_values"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/banner_altitude">
+            <TextView
+                android:id="@+id/min_altitude"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="000.0000"
+                android:textStyle="italic"
+                android:fontFamily="sans-serif-light"
+                android:textSize="17dp"
+                android:textColor="@color/results_number_color"
+                android:textAlignment="center"/>
+            <TextView
+                android:id="@+id/average_altitude"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="000.0000"
+                android:textStyle="italic"
+                android:fontFamily="sans-serif-light"
+                android:textSize="17dp"
+                android:textColor="@color/results_number_color"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:id="@+id/max_altitude"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-light"
+                android:text="000.0000"
+                android:textAlignment="center"
+                android:textColor="@color/results_number_color"
+                android:textSize="17dp"
+                android:textStyle="italic" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/altitude_labels"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/altitude_values">
+            <TextView
+                android:id="@+id/min_altitude_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/min_label"
+                android:textSize="15dp"
+                android:textColor="@color/results_label_color"
+                android:fontFamily="sans-serif-smallcaps"
+                android:textAlignment="center"/>
+            <TextView
+                android:id="@+id/average_altitude_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/avr_label"
+                android:textSize="15dp"
+                android:textColor="@color/results_label_color"
+                android:fontFamily="sans-serif-smallcaps"
+                android:textAlignment="center"/>
+            <TextView
+                android:id="@+id/max_altitude_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/max_label"
+                android:textSize="15dp"
+                android:textColor="@color/results_label_color"
+                android:fontFamily="sans-serif-smallcaps"
+                android:textAlignment="center"/>
+
+        </LinearLayout>
+        <!--        Speed        -->
+        <TextView
+            android:id="@+id/banner_speed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="speed"
+            android:layout_below="@id/altitude_labels"
+            android:fontFamily="serif-monospace"
+            android:textSize="20dp"
+            android:textColor="@color/results_label_color"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="5dp"
+            android:textAlignment="center"/>
+    <TextView
+        android:id="@+id/speed_color_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/avg_Speed_line_color"
+        android:layout_below="@id/banner_speed"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"/>
+
+
+    <LinearLayout
+            android:id="@+id/speed_values"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/banner_speed">
+            <TextView
+                android:id="@+id/min_speed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="000.0000"
+                android:textStyle="italic"
+                android:fontFamily="sans-serif-light"
+                android:textSize="17dp"
+                android:textColor="@color/results_number_color"
+                android:textAlignment="center"/>
+            <TextView
+                android:id="@+id/average_speed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="000.0000"
+                android:textStyle="italic"
+                android:fontFamily="sans-serif-light"
+                android:textSize="17dp"
+                android:textColor="@color/results_number_color"
+                android:textAlignment="center"/>
+            <TextView
+                android:id="@+id/max_speed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="000.0000"
+                android:textStyle="italic"
+                android:fontFamily="sans-serif-light"
+                android:textSize="17dp"
+                android:textColor="@color/results_number_color"
+                android:textAlignment="center"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/speed_labels"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/speed_values">
+            <TextView
+                android:id="@+id/min_speed_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Min"
+                android:textSize="15dp"
+                android:textColor="@color/results_label_color"
+                android:fontFamily="sans-serif-smallcaps"
+                android:textAlignment="center"/>
+            <TextView
+                android:id="@+id/average_speed_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/avr_label"
+                android:textSize="15dp"
+                android:textColor="@color/results_label_color"
+                android:fontFamily="sans-serif-smallcaps"
+                android:textAlignment="center"/>
+            <TextView
+                android:id="@+id/max_speed_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/max_label"
+                android:textSize="15dp"
+                android:textColor="@color/results_label_color"
+                android:fontFamily="sans-serif-smallcaps"
+                android:textAlignment="center"/>
+
+        </LinearLayout>
+
+
+        <com.example.tracker.GraphView
+            android:id="@+id/my_graph"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/speed_labels"
+            android:layout_margin="10dp"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.tracker.MainActivity" >
+    <item
+        android:id="@+id/tracking_activity"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        android:title="Start Tracking"/>
+</menu>

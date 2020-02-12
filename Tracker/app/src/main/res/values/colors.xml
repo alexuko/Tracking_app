@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="grey_dark">#1a2521</color>
+    <color name="grey_Medium">#7A867E</color>
+    <color name="grey_Light">#B9B9B9</color>
+    <color name="start_btn_color">#08B864</color>
+    <color name="stop_btn_color">#E63838</color>
+    <color name="text_btn_color">#EBE4E4</color>
+    <color name="avg_Alt_line_color">#FF9100</color>
+    <color name="avg_Speed_line_color">#308DFF</color>
+    <color name="distance_line_color">#BBB9B9</color>
+    <color name="results_label_color">#818080</color>
+    <color name="results_number_color">#DDF819</color>
+    <color name="graph_numbers_color">#D2E955</color>
+
+</resources>
+

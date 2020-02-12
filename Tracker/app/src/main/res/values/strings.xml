@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name" >Tracking app</string>
+    <string name="min_label">Min</string>
+    <string name="max_label">Max</string>
+    <string name="avr_label">Average</string>
+    <string name="min_speed">Min Speed</string>
+    <string name="instructions">Just press\n START to track your activity\n  STOP to check your statistics</string>
+</resources>
